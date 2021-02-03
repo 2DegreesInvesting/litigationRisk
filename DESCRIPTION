@@ -1,5 +1,5 @@
 Package: litigationRisk
-Title: What the Package Does (One Line, Title Case)
+Title: 'litigationRisk' App
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given = "Mauro",
@@ -7,11 +7,18 @@ Authors@R:
              role = c("aut", "ctr", "cre"),
              email = "maurolepore@gmail.com",
              comment = c(ORCID = "0000-0002-1986-7988")),
+      person(given = "Jacob",
+             family = "Kastl",
+             role = "aut",
+             email = "jacob@2degrees-investing.org"),
+      person(given = "Constanze",
+             family = "Bayer",
+             role = "aut",
+             email = "constanze@2degrees-investing.org"),
       person(given = "2 Degrees Investing Initiative",
              role = c("cph", "fnd"),
              email = "contact@2degrees-investing.org"))
-Description: For more information visit
-    <https://2degrees-investing.org/>.
+Description: 'litigationRisk' App.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
