@@ -2,3 +2,5 @@
 ^README\.Rmd$
 ^litigationRisk\.Rproj$
 ^\.Rproj\.user$
+^\.github$
+^codecov\.yml$
