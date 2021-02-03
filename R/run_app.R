@@ -17,7 +17,8 @@ run_app <- function() {
     })
 
     output$dt <- DT::renderDataTable(
-      data(), filter = list(position = "top", clear = FALSE)
+      data(),
+      filter = list(position = "top", clear = FALSE)
     )
   }
 
