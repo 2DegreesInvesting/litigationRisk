@@ -24,8 +24,12 @@ devtools::install_github("2DegreesInvesting/litigationRisk")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
-library(litigationRisk)
+installed_data <- system.file("extdata", package = "litigationRisk")
+list.files(installed_data)
+#> [1] "mtcars.csv"
+
+if (interactive()) {
+  litigationRisk::run_app()
+}
 ```

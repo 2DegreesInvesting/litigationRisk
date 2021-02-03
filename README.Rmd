@@ -30,10 +30,14 @@ You can install the development version from [GitHub](https://github.com/) with:
 # install.packages("devtools")
 devtools::install_github("2DegreesInvesting/litigationRisk")
 ```
+
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+```{r}
+installed_data <- system.file("extdata", package = "litigationRisk")
+list.files(installed_data)
 
-```{r example}
-library(litigationRisk)
+if (interactive()) {
+  litigationRisk::run_app()
+}
 ```
