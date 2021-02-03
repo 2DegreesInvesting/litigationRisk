@@ -3,7 +3,9 @@
 #' @export
 #'
 #' @examples
-#' run_app()
+#' if (interactive()) {
+#'   run_app()
+#' }
 run_app <- function() {
   ui <- fluidPage(
     title(),

@@ -10,5 +10,7 @@ run_app()
 Run litigationRisk app
 }
 \examples{
-run_app()
+if (interactive()) {
+  run_app()
+}
 }
