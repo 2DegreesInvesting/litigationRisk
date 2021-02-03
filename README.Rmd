@@ -37,7 +37,5 @@ devtools::install_github("2DegreesInvesting/litigationRisk")
 installed_data <- system.file("extdata", package = "litigationRisk")
 list.files(installed_data)
 
-if (interactive()) {
-  litigationRisk::run_app()
-}
+litigationRisk::run_app()
 ```

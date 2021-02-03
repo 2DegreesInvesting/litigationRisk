@@ -29,7 +29,10 @@ installed_data <- system.file("extdata", package = "litigationRisk")
 list.files(installed_data)
 #> [1] "mtcars.csv"
 
-if (interactive()) {
-  litigationRisk::run_app()
-}
+litigationRisk::run_app()
+#> Loading required package: shiny
+#> 
+#> Listening on http://127.0.0.1:5601
 ```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
