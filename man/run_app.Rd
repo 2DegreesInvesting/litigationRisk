@@ -2,12 +2,12 @@
 % Please edit documentation in R/run_app.R
 \name{run_app}
 \alias{run_app}
-\title{Run app}
+\title{Run litigationRisk app}
 \usage{
 run_app()
 }
 \description{
-Run app
+Run litigationRisk app
 }
 \examples{
 run_app()
