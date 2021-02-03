@@ -1,4 +1,4 @@
-#' Run app
+#' Run litigationRisk app
 #'
 #' @export
 #'
@@ -6,7 +6,8 @@
 #' run_app()
 run_app <- function() {
   ui <- fluidPage(
-    DT::dataTableOutput("dt")
+    title(),
+    DT::dataTableOutput("dt"),
   )
 
   server <- function(input, output, session) {
@@ -23,4 +24,8 @@ run_app <- function() {
   }
 
   shinyApp(ui, server)
+}
+
+title <- function() {
+  h1("Nothing exciting to show yet.")
 }

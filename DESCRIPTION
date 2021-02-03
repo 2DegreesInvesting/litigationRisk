@@ -22,9 +22,11 @@ Description: 'litigationRisk' App.
 License: MIT + file LICENSE
 Imports: 
     DT,
-    shiny
+    shiny,
+    utils
 Suggests: 
-    covr
+    covr,
+    pkgload
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
