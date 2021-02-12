@@ -2,12 +2,15 @@
 % Please edit documentation in R/run_app.R
 \name{run_app}
 \alias{run_app}
-\title{Run litigationRisk app}
+\title{litigationRisk app}
 \usage{
 run_app()
 }
+\value{
+Called for its side effect.
+}
 \description{
-Run litigationRisk app
+litigationRisk app
 }
 \examples{
 if (interactive()) {

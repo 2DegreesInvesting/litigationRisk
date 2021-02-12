@@ -1,5 +1,6 @@
-#' Run litigationRisk app
+#' litigationRisk app
 #'
+#' @return Called for its side effect.
 #' @export
 #'
 #' @examples
@@ -8,26 +9,19 @@
 #' }
 run_app <- function() {
   ui <- fluidPage(
-    title(),
-    DT::dataTableOutput("dt"),
+    tabsetPanel(
+      id = "tab",
+      histogramUI("hist1", facet = "cyl"),
+      histogramUI("hist2", facet = "carb"),
+      histogramUI("hist3", facet = "gear")
+    )
   )
 
   server <- function(input, output, session) {
-    data <- reactive({
-      dataset <- "mtcars.csv"
-      path <- system.file("extdata", dataset, package = "litigationRisk")
-      read.csv(path)
-    })
-
-    output$dt <- DT::renderDataTable(
-      data(),
-      filter = list(position = "top", clear = FALSE)
-    )
+    histogramServer("hist1", facet = "cyl")
+    histogramServer("hist2", facet = "carb")
+    histogramServer("hist3", facet = "gear")
   }
 
   shinyApp(ui, server)
-}
-
-title <- function() {
-  h1("Nothing exciting to show yet.")
 }
