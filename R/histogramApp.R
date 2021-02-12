@@ -7,11 +7,15 @@ dataset <- function(file = "mtcars.csv") {
   read.csv(path)
 }
 
+select_label <- function(facet) {
+  sprintf("Select the values of '%s' you want to plot", facet)
+}
+
 histogramUI <- function(id, facet) {
   choices <- unique(dataset()[[facet]])
   tabPanel(
     facet,
-    selectInput(NS(id, "var"), "Select", choices),
+    selectInput(NS(id, "var"), select_label(facet), choices),
     plotOutput(NS(id, "hist")),
     p(sprintf("'%s' for the values of '%s' you selected.", plot_var(), facet))
   )
